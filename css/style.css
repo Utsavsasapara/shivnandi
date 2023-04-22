@@ -39,6 +39,9 @@ nav {
 .active1{
     color: var(--red)!important;
 }
+.active2{
+    color: var(--red)!important;
+}
 .menu ul{
     list-style-type: none;
     display: flex;
@@ -425,7 +428,119 @@ h1.f-big{
 }
 
 
+/* ######## cars page css ######### */
+.honda{
+    background-color: var(--blue);
+}
+.fcar-text h1{
+    font-size: 46px !important;
+    font-family: var(--secondaryFont);
+    color: var(--white);
+}
+.honda-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.hero-car1{
+    text-align: right;
+}
+.hero-car1 img{
+    width:320px;
+}
 
+.suv-cars{
+    background-image: url('../images/bg.jpg')!important;
+    padding-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+}
+.seadn-cars{
+    background-color: var(--blue);
+    padding-bottom: 40px;
+}
+.tempo{
+    background-image: url('../images/bg-2.jpg')!important;
+    padding:40px 0px;
+    background-position: center;
+    background-size: cover;
+}
+.box-bg{
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+.cars-box-sec h1,.cars-box-sec h2 {
+    font-weight: bold;
+    color: var(--black);
+    font-family: var(--secondaryFont);
+    font-size: 24px !important;
+}
+.cars-box-sec img{
+    height: 110px;
+}
+.cars-box-sec h1{
+    padding-top: 20px;
+}
+.cars-box-sec p{
+    color: var(--black);
+    font-family: var(--primaryFont);
+    font-size: 16px !important;
+    font-weight: 300;
+}
+.cars-box-sec a{
+    color: var(--white) !important;
+    font-family: var(--primaryFont);
+    font-size: 18px !important;
+    font-weight: bold;
+    background-color: var(--blue);
+    padding: 8px 12px;
+    width: 160px;
+    display: inline-block;
+}
+.cars-range-1{
+    padding-top: 40px;
+    display: flex;
+}
+.more-vehicle-1{
+    border-radius: 10px;
+    margin: 0px 15px;
+
+}
+.part-11 h2{
+    font-weight: bold;
+    color: var(--white);
+    font-family: var(--secondaryFont);
+    font-size: 30px !important;
+    padding-bottom: 25px;
+}
+
+.r-box{
+    padding: 40px 0px;
+}
+.r-cont{
+    text-align: center;
+}
+.r-cont h3{
+    text-align: center;
+    color: var(--blue);
+    font-family: var(--secondaryFont);
+    font-size: 30px;
+    font-weight: 300;
+}
+.r-cont h2{
+    text-align: center !important;
+    color: var(--red);
+    font-family: var(--secondaryFont);
+    font-size: 46px;
+    font-weight: 300;
+    display: inline-block;
+ }
+ .e-star{
+    color: var(--blue);
+ }
+ 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1440px) {
@@ -468,6 +583,29 @@ h1.f-big{
     }
     .f-link p{
         margin-left: 0;
+    }
+
+    /* cars-media */
+    .cars-box-sec{
+        padding: 0px;
+    }
+    .cars-box-sec p{
+        line-height: 1.2;
+    }
+    .cars-box-sec img{
+        height: 70px;
+    }
+    .cars-box-sec h1{
+        font-size: 18px !important;
+    }
+    .cars-box-sec h2{
+        font-size: 18px !important;
+    }
+    .r-cont h2{
+        font-size: 40px;
+    }
+    .r-cont h3{
+        font-size: 30px;
     }
 }
 
@@ -516,6 +654,34 @@ h1.f-big{
     }
     .f-link p{
         margin-left: 0;
+    }
+
+
+    /* cars-media */
+    .fcar-text, .hero-car1{
+        text-align: center;
+    }
+    .box-bg{
+            margin: 10px;
+    }
+    .tempo{
+        padding: 0;
+    }
+    .cars-range-1{
+        padding: 0;
+    }
+    .suv-cars{
+        padding: 20px 0;
+    }
+    .seadn-cars{
+        padding: 20px 0;
+    }
+    .part-11 h2 {
+        font-size: 24px !important;
+        padding-bottom: 10px;
+    }
+    .cars-box-sec h1 {
+        padding-top: 10px;
     }
 }
 
@@ -629,6 +795,49 @@ h1.f-big{
     }
     .f-link p{
         margin-left: 0;
+    }
+
+    
+    /* cars-media */
+    .box-bg{
+        margin: 10px;
+    }
+    .hero-car1 img{
+        width: 220px;
+    }
+    .fcar-text h1 {
+        font-size: 24px !important;
+    }
+    .cars-box-sec h1 {
+        padding-top: 0px;
+    }
+    .cars-box-sec img {
+        height: 80px;
+    }
+    .cars-title h1 {
+        font-size: 24px !important;
+    }
+    .car-row {
+        padding-top: 10px;
+    }
+    .part-11 h2 {
+        font-size: 24px !important;
+        padding-bottom: 10px;
+    }
+    .tempo{
+        padding: 0;
+    }
+    .cars-range-1{
+        padding: 0;
+    }
+    .suv-cars{
+        padding: 20px 0;
+    }
+    .seadn-cars{
+        padding: 20px 0;
+    }
+    .r-cont h3,.r-cont h2{
+        font-size: 20px !important;
     }
 }
 
