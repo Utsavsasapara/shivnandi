@@ -495,7 +495,9 @@ h1.f-big {
     font-size: 46px !important;
     padding-top: 10px;
 }
-
+.f-link a{
+    color: var(--white) !important;
+}
 
 /* ######## cars page css ######### */
 .honda {
