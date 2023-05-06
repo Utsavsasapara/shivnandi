@@ -78,8 +78,7 @@ nav {
     padding-top: 50px;
 }
 
-.h-text h1,
-.h-text2 h1 {
+.h-text h1{
     color: var(--white);
     font-weight: bolder;
     text-align: center;
@@ -87,8 +86,11 @@ nav {
     margin-bottom: 0;
     font-family: var(--secondaryFont);
 }
-
-.h-text2 h1 {
+.h-text2 h1 a{
+    color: var(--white) !important;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0;
     font-family: var(--primaryFont);
     font-weight: 300;
     letter-spacing: 1 !important;
@@ -425,19 +427,23 @@ nav {
     padding: 40px 0;
 }
 
-.ready-text h1,
-.ready-text h2 {
+.ready-text h1 {
     font-weight: bold;
     color: var(--white);
     font-family: var(--primaryFont) !important;
     text-align: center;
     font-size: 30px !important;
 }
-
-.ready-text h2 {
-    font-family: var(--secondaryFont);
-    color: var(--yellow);
+.ready-text h2 a{
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px !important;
+    font-family: var(--secondaryFont) !important;
+    color: var(--yellow) !important;
+    width: 100%;
 }
+
 
 .footer {
     background-color: var(--black);
@@ -1130,7 +1136,7 @@ h1.f-big {
         font-size: 35px !important;
     }
 
-    .h-text2 h1 {
+    .h-text2 h1 a{
         font-size: 35px !important;
     }
 
