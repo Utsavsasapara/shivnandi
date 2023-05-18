@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <title>Shiv Nandi Travellers</title>
+    <title>Cars at Shiv Nandi Travellers</title>
   </head>
 
 <body>
@@ -32,7 +32,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="images/logo.png" title="Shiv nandi Logo" alt="Shiv nandi Logo">
+                    <a href="index.html"><img src="images/logo.png" title="Shiv Nandi travellers" alt="Shiv Nandi travellers Logo"></a>
                 </div>
                 <button id="toggle-btn">&#9776;</button>
                 <div class="menu">
@@ -112,18 +112,18 @@
                         <h1>MARRAZO</h1>
                         <p>7 Seater | Luxurious Experience | Diesel | 190L Boot Space | Transmission Manual
                         </p>
-                        <h2>RS.13 PER KM</h2>
+                        <h2>RS.15 PER KM</h2>
                         <a href="#">BOOK NOW</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="seadn-cars" id="seadncar">
+    <div class="seadn-cars" id="sedancar">
         <div class="container">
             <div class="row car-row">
                 <div class="cars-title">
-                    <h1>SEADN CARS</h1>
+                    <h1>SEDAN CARS</h1>
                 </div>
             </div>
             <div class="row cars-range-1">
@@ -139,7 +139,7 @@
                 <div class="col-md-4 cars-box-sec">
                     <div class="box-bg">
                         <img src="images/car-5.png" alt="SWIFT" title="SWIFT">
-                        <h1>SWIFT</h1>
+                        <h1>SWIFT DZIRE</h1>
                         <p>5 Seater | 24/7 Available | Petrol | 378L Boot Space | Transmission Manual
                         </p>
                         <h2>RS.10 PER KM</h2>
@@ -193,19 +193,25 @@
         <div class="container">
             <div class="row r-box">
                 <div class="col-md-3 r-cont">
-                    <h3>Happy<br>Customer</h3>
-                    <h2>5K</h2>
+                    <p><img src="./images/rank-1.png" alt="icon"></p>
+                    <h5>Happy<br>Customer</h5>
+                    <h2><span class="num" data-val="5000">0000</span></h2>
+                    
                 </div>
                 <div class="col-md-3 r-cont">
-                    <h3>Road<br>Trip</h3>
-                    <h2>10K</h2>
+                    <p><img src="./images/rank-2.png" alt="icon"></p>
+                    <h5>Road<br>Trip</h5>                  
+                    <h2><span class="num" data-val="10000">0000</span></h2>
+                    
                 </div>
                 <div class="col-md-3 r-cont">
-                    <h3>Total<br>Bookings</h3>
-                    <h2>11K</h2>
+                    <p><img src="./images/rank-3.png" alt="icon"></p> 
+                    <h5>Total<br>Bookings</h5>                   
+                    <h2><span class="num" data-val="11000">0000</span></h2>
+                    
                 </div>
                 <div class="col-md-3 r-cont">
-                    <h3>Car<br>Ratings</h3>
+                    <h5>Car<br>Ratings</h5>
                     <h2>&starf;&starf;&starf;&starf;<span class="e-star">&starf;</span></h2>
                 </div>
             </div>
@@ -275,7 +281,7 @@
           <div class="row">
             <div class="col-md-3 f-link">
               <div class="f-logo">
-                <img src="images/logo.png" alt="logo" title="logo">
+                <a href="index.html"><img src="images/logo.png" title="Shiv Nandi travellers" alt="Shiv Nandi travellers Logo"></a>
               </div>
               <h1 class="f-big">24/7</h1>
               <p>SERVICES</p>
@@ -295,7 +301,7 @@
               <h1>CARS</h1>
               <ul>
                 <li><a href="cars.html#car"><img src="images/list-icon.png" alt="list-icon" title="list-icon">SUV CAR</a></li>
-                <li><a href="cars.html#seadncar"><img src="images/list-icon.png" alt="list-icon" title="list-icon">SEADN CAR</a></li>
+                <li><a href="cars.html#sedancar"><img src="images/list-icon.png" alt="list-icon" title="list-icon">SEDAN CAR</a></li>
                 <li><a href="cars.html#tempo"><img src="images/list-icon.png" alt="list-icon" title="list-icon">TEMPO & BUS</a></li>
               </ul>
             </div>
@@ -325,6 +331,22 @@
                 $(".menu").toggle();
             });
         });
+
+        let valueDisplays = document.querySelectorAll(".num");
+    let interval = 11000;
+
+    valueDisplays.forEach((valueDisplay)=>{
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function(){
+        startValue += 10;
+        valueDisplay.textContent = startValue;
+        if(startValue == endValue){
+          clearInterval(counter);
+        }
+      }, duration);
+    });
     </script>
 </body>
 

@@ -461,6 +461,7 @@ nav {
 
 .best-box {
     margin: 20px;
+    justify-content: center;
 }
 
 .icon {
@@ -734,14 +735,31 @@ h1.f-big {
 
 .r-cont {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.r-cont img{
+   width: 60px;
+}
+.r-cont p{
+    margin: 0;
+    padding: 0;
+ }
+ .r-cont span.num{
+    text-align: center !important;
+    color: var(--red);
+    font-family: var(--secondaryFont);
+    font-size: 46px;
+    font-weight: 300;
+    display: inline-block;
+ }
 
-.r-cont h3 {
+.r-cont h5 {
     text-align: center;
     color: var(--blue);
     font-family: var(--secondaryFont);
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 20px;
 }
 
 .r-cont h2 {
@@ -800,14 +818,25 @@ h1.f-big {
     padding: 40px 0px;
 }
 
+
+.r-cont-ab img{
+   width: 60px;
+}
+.r-cont-ab p{
+    margin: 0;
+    padding: 0;
+ }
 .r-cont-ab {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.r-cont-ab h3 {
+.r-cont-ab h5 {
     text-align: center;
     color: var(--white);
     font-family: var(--secondaryFont);
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
 }
 .r-cont-ab h2 {
@@ -818,15 +847,27 @@ h1.f-big {
     font-weight: 300;
     display: inline-block;
 }
+.r-cont-ab span.num{
+    text-align: center !important;
+    color: var(--white);
+    font-family: var(--secondaryFont);
+    font-size: 46px;
+    font-weight: 300;
+    display: inline-block;
+ }
 .e-star-ab {
     color: var(--white);
 }
 .ab-map{
-    background-image: url('../images/bg-map.jpg') !important;
     width: 100%;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
+    padding:20px 0;
+}
+.submit-btn2{
+    background-color: var(--blue)!important;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 10px;
 }
 
 

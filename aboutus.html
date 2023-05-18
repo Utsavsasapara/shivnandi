@@ -24,14 +24,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
-  <title>Shiv Nandi Travellers</title>
+  <title>About - Shiv Nandi Travellers</title>
 </head>
 <body>
     <header>
         <div class="container">
           <nav>
             <div class="logo">
-              <img src="images/logo.png" title="Shiv nandi logo" alt="Shiv nandi Logo">
+              <a href="index.html"><img src="images/logo.png" title="Shiv Nandi travellers" alt="Shiv Nandi travellers Logo"></a>
             </div>
             <button id="toggle-btn">&#9776;</button>
             <div class="menu">
@@ -76,26 +76,62 @@
     <div class="ranker-ab">
         <div class="container">
             <div class="row r-box-ab">
-                <div class="col-md-3 r-cont-ab">
-                    <h3>Happy<br>Customer</h3>
-                    <h2>5K</h2>
-                </div>
-                <div class="col-md-3 r-cont-ab">
-                    <h3>Road<br>Trip</h3>
-                    <h2>10K</h2>
-                </div>
-                <div class="col-md-3 r-cont-ab">
-                    <h3>Total<br>Bookings</h3>
-                    <h2>11K</h2>
-                </div>
-                <div class="col-md-3 r-cont-ab">
-                    <h3>Car<br>Ratings</h3>
-                    <h2>&starf;&starf;&starf;&starf;<span class="e-star-ab">&starf;</span></h2>
-                </div>
+              <div class="col-md-3 r-cont-ab">
+                <p><img src="./images/rank-1-ab.png" alt="icon"></p>
+                <h5>Happy<br>Customer</h5>
+                <h2><span class="num" data-val="5000">0000</span></h2>
+                
+            </div>
+            <div class="col-md-3 r-cont-ab">
+                <p><img src="./images/rank-2-ab.png" alt="icon"></p>
+                <h5>Road<br>Trip</h5>                  
+                <h2><span class="num" data-val="10000">0000</span></h2>
+                
+            </div>
+            <div class="col-md-3 r-cont-ab">
+                <p><img src="./images/rank-3-ab.png" alt="icon"></p> 
+                <h5>Total<br>Bookings</h5>                   
+                <h2><span class="num" data-val="11000">0000</span></h2>
+                
+            </div>
+            <div class="col-md-3 r-cont-ab">
+                <h5>Car<br>Ratings</h5>
+                <h2>&starf;&starf;&starf;&starf;<span class="e-star-ab">&starf;</span></h2>
+            </div>
             </div>
         </div>
     </div>
     <div class="ab-map">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ahmedabad&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://capcuttemplate.org/">Capcut Template</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {width:100%!important;height:400px!important;}</style>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form action="">
+              <div class="mb-3 mt-3">
+                <label for="fname" class="form-label">Name:</label>
+                <input type="fname" class="form-control" id="fname" placeholder="Enter Your Name" name="fname">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="tel" class="form-label">Phone:</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Enter Phone number" name="phone">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="submit-btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="ready-to-receive">
       <div class="container">
@@ -117,7 +153,7 @@
         <div class="row">
           <div class="col-md-3 f-link">
             <div class="f-logo">
-              <img src="images/logo.png" alt="logo" title="logo">
+              <a href="index.html"><img src="images/logo.png" title="Shiv Nandi travellers" alt="Shiv Nandi travellers Logo"></a>
             </div>
             <h1 class="f-big">24/7</h1>
             <p>SERVICES</p>
@@ -137,7 +173,7 @@
             <h1>CARS</h1>
             <ul>
               <li><a href="cars.html#car"><img src="images/list-icon.png" alt="list-icon" title="list-icon">SUV CAR</a></li>
-              <li><a href="cars.html#seadncar"><img src="images/list-icon.png" alt="list-icon" title="list-icon">SEADN CAR</a></li>
+              <li><a href="cars.html#sedancar"><img src="images/list-icon.png" alt="list-icon" title="list-icon">SEDAN CAR</a></li>
               <li><a href="cars.html#tempo"><img src="images/list-icon.png" alt="list-icon" title="list-icon">TEMPO & BUS</a></li>
             </ul>
           </div>
@@ -166,6 +202,22 @@
       $("#toggle-btn").click(function(){
         $(".menu").toggle();
       });
+    });
+
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 11000;
+
+    valueDisplays.forEach((valueDisplay)=>{
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function(){
+        startValue += 10;
+        valueDisplay.textContent = startValue;
+        if(startValue == endValue){
+          clearInterval(counter);
+        }
+      }, duration);
     });
     </script>
 </body>
